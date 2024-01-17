@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Start NavBar BootStrap -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark myNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="blog.html"><img src="images/Blog-App-Logo.png" alt="" width="300px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <form class="d-flex headerBtn">
+          <a class="btn headerbtn1" onclick="openPopup();">Your Account</a>
+          <a class="btn headerbtn2" onclick="logOut();">LogOut</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar Bootstrap -->
+  <!-- PopUp  -->
+  <div id="popUp">
+    <article id="overlay">
+      <h1>Your Account Deatails:</h1>
+      <p>"Account details" refer to specific information associated with an individual's or entity's account within a
+        system, platform, or service. These details typically encompass a range of personal or organizational
+        information, including but not limited to user names, contact information, account numbers, and any relevant
+        preferences or settings. </p>
+      <ul>
+        <li id="userName"></li>
+        <li id="userEmail"></li>
+        <li id="userPassword"></li>
+      </ul>
+      <button onclick="closePopup()" id="close">Close</button>
+    </article>
+  </div>
+  <div id="overlay"></div>
+  <!-- End PopUp -->
+
+  <!-- Blog Post Section -->
+  <div class="container">
+    <div class="card">
+      <div class="inputs">
+        <input type="text" name="title" id="title" placeholder="Write title of your Blog." autocomplete="on">
+        <input type="text" name="tag" name="tag" id="tag" placeholder="Write tag of your Blog." autocomplete="on">
+        <input type="date" name="time" name="date" id="timeInput" style="cursor: pointer;"
+          placeholder="Set time of your Blog.">
+        <input type="time" name="date" name="date" id="dateInput" style="cursor: pointer;"
+          placeholder="Set date of your Blog.">
+      </div>
+      <div id="editor">
+      </div>
+      <div class="card-body">
+        <a class="btn1  btn-primary" onclick="submitPost();">Submit Blog</a>
+        <a class="btn2 btn-primary" onclick="deletePost();">Delete Blog</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Blog Post Section -->
+
+  <!-- After Submit Post -->
+  <div class="container" id="card">
+
+  </div>
+
+  <!-- End after Submit post -->
+
+  <!-- Cdn of Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Flatpicker -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!-- Include the Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 433px) {
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px !important;
+        width: 75%;
+    }
+
+    .btn1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-collapse {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 282px) {
+    .headerbtn1 {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .headerbtn2 {
+        width: 100%;
+    }
+}

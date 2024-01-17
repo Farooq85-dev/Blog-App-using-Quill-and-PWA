@@ -1,0 +1,119 @@
+@font-face {
+  font-family: f1;
+  src: url(fonts/Putrey-Regular.ttf);
+}
+
+@font-face {
+  font-family: f2;
+  src: url(fonts/Putrey-Bold.ttf);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #dee4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamSpeak i {
+  font-size: 200px;
+  color: #262246;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: f2;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: f1;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  margin-bottom: 0px !important;
+  background-color: white;
+}
+
+.form2 {
+  padding-right: 90px;
+}
+.body2{
+  margin: 100px;
+}
+
+.logIn{
+  margin-left: 20px;
+}
+
+.inputs>input {
+  background-color: #f0f0f0;
+  font-family: f1;
+  color: black;
+  outline: none;
+  border-bottom: 2px solid #816eff !important;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.inputs>input:focus {
+  border-bottom: 2px solid #262246 !important;
+  font-family: f2;
+}
+
+button {
+  width: 100%;
+  background-color: #262246;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: f1;
+  font-size: 17px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 0.988;
+}
+
+/* Sweet Alert  */
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #262246 !important;
+  border-radius: 50px !important;
+  font-family: f1 !important;
+  font-size: 20px;
+  color: white !important;
+
+  padding: 15px 40px;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:hover {
+  background-color: #262246 !important;
+}
